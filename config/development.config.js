@@ -3,7 +3,7 @@
 // DEVELOPMENT configuration
 //
 /////////////////////////////////////////////////////////////////////
-const HOST_URL = 'http://localhost'
+const HOST_URL = 'http://172.30.1.36'
 const PORT = 8080
 
 const config = {
@@ -56,8 +56,8 @@ const config = {
 
       baseUri: 'https://developer.api.autodesk.com',
 
-      clientSecret: '',
-      clientId: '',
+      clientSecret: 'OpQwAZ92I3ChGA2c',
+      clientId: '6GHAsnAFwrdT51lSyrXzKMpincnimrs2',
 
       scope: [
         'data:read',
@@ -88,9 +88,9 @@ const config = {
   database: {
     type: 'mongo',
     connectionString: '',
-    dbName: 'admin',
-    user: '',
-    pass: '',
+    dbName: 'forge-rcdb',
+    user: 'zpwand',
+    pass: 'chol002',
     dbhost: 'localhost',
     port: 27017,
     models: {

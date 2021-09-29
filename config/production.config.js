@@ -3,8 +3,8 @@
 // PRODUCTION configuration
 //
 /////////////////////////////////////////////////////////////////////
-const HOST_URL = process.env.RCDB_APP_HOST
-const PORT = process.env.RCDB_APP_PORT
+const HOST_URL = 'http://172.30.1.36'
+const PORT = 3000
 
 const config = {
 
@@ -59,8 +59,8 @@ const config = {
       accessTokenUri: '/authentication/v1/gettoken',
       baseUri: 'https://developer.api.autodesk.com',
 
-      clientSecret: process.env.FORGE_CLIENT_SECRET,
-      clientId: process.env.FORGE_CLIENT_ID,
+      clientSecret: 'OpQwAZ92I3ChGA2c',
+      clientId: '6GHAsnAFwrdT51lSyrXzKMpincnimrs2',
 
       scope: [
         'data:read',
@@ -86,12 +86,12 @@ const config = {
   // Set the "connectionString" and "dbName" and leave other fields empty if you'd like to specify the entire connection string yourself.
   database: {
     type: 'mongo',
-    connectionString: process.env.RCDB_CONNECTION_STRING,
-    dbhost: process.env.RCDB_DBHOST,
-    dbName: process.env.RCDB_DBNAME,
-    user: process.env.RCDB_USER,
-    pass: process.env.RCDB_PASS,
-    port: process.env.RCDB_PORT,
+    connectionString: '',
+    dbName: 'forge-rcdb',
+    user: 'zpwand',
+    pass: 'chol002',
+    dbhost: 'localhost',
+    port: 27017,
     models: {
       configurator: {
         collection:'configurator.models'
